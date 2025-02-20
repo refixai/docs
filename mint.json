@@ -68,7 +68,7 @@
     },
     {
       "group": "Guides",
-      "pages": ["guides/framer"]
+      "pages": ["guides/framer", "guides/webflow"]
     }
   ],
   "footerSocials": {
