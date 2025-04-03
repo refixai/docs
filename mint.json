@@ -16,7 +16,6 @@
       "to": "#4A44C3"
     }
   },
-  
   "topbarLinks": [
     {
       "name": "Book a Demo",
@@ -29,14 +28,18 @@
   },
   "anchors": [
     {
-        "name": "Guides",
-        "icon": "lightbulb",
-        "url": "guides"
-    }],
+      "name": "Guides",
+      "icon": "lightbulb",
+      "url": "guides"
+    }
+  ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["overview", "installation"]
+      "pages": [
+        "overview",
+        "installation"
+      ]
     },
     {
       "group": "Tracking",
@@ -56,6 +59,18 @@
       ]
     },
     {
+      "group": "Framer plugin",
+      "pages": [
+        "framer-plugin/overview",
+        "framer-plugin/installation",
+        "framer-plugin/getting-started",
+        "framer-plugin/event-tracking",
+        "framer-plugin/event-details",
+        "framer-plugin/dashboard-overview",
+        "framer-plugin/privacy"
+      ]
+    },
+    {
       "group": "Data & Privacy",
       "pages": [
         "privacy/GDPR",
@@ -64,11 +79,16 @@
     },
     {
       "group": "Pricing",
-      "pages": ["pricing/overage-ltd"]
+      "pages": [
+        "pricing/overage-ltd"
+      ]
     },
     {
       "group": "Guides",
-      "pages": ["guides/framer", "guides/webflow"]
+      "pages": [
+        "guides/framer",
+        "guides/webflow"
+      ]
     }
   ],
   "footerSocials": {
