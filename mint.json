@@ -61,13 +61,13 @@
     {
       "group": "Framer plugin",
       "pages": [
-        "framer-plugin/overview",
+        "framer-plugin/plugin-overview",
         "framer-plugin/installation",
         "framer-plugin/getting-started",
         "framer-plugin/event-tracking",
         "framer-plugin/event-details",
         "framer-plugin/dashboard-overview",
-        "framer-plugin/privacy"
+        "framer-plugin/plugin-privacy"
       ]
     },
     {
