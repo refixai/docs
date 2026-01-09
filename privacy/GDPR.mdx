@@ -5,7 +5,7 @@ description:
 
 ## Introduction
 
-Refix is committed to protecting the privacy and security of our users' data. This policy outlines our practices and commitments in relation to data protection and privacy, in compliance with the General Data Protection Regulation (GDPR).
+Refix (including Refix Analytics and Prism) is committed to protecting the privacy and security of our users' data. This policy outlines our practices and commitments in relation to data protection and privacy, in compliance with the General Data Protection Regulation (GDPR).
 
 ## What is GDPR?
 
@@ -35,21 +35,55 @@ We use as minimal amount of sub-processors as possible. Here is the full list:
 | **Clerk**                  | User authentication and management                                                                           | [Learn more](https://help.clerk.io/help/gdpr/gdpr/) |
 | **Loops**                  | Email communication and marketing automation                                                                 | [Learn more](https://loops.so/privacy) |
 
+## User Data & Connected Integrations
 
-
-## Data We Collect
-
-We collect minimal data to provide our service effectively:
+We collect minimal data to provide our service effectively. This includes data from SaaS integrations you explicitly connect to Refix.
 
 | Data Point                 | Description                                                                                                  |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Connected SaaS Data**    | Data fetched from integrations (like Google Drive, BigQuery, Analytics) to answer user queries and generate insights. |
 | **Unique user identifier** | A randomly generated ID stored locally in the user's browser to distinguish individual visitors anonymously. |
-| **Page views**             | URLs of pages visited                                                                                        |
-| **Referrer**               | The source of the visit                                                                                      |
-| **Device information**     | Browser, operating system, screen width and device type                                                      |
-| **Location**               | The user's country, inferred from their browser's timezone setting. No IP addresses are collected or used.   |
+| **Page views**             | URLs of pages visited on our platform                                                                        |
+| **Device information**     | Browser, operating system, and device type                                                      |
 
-<Note> We do not use cookies or collect any personally identifiable information. </Note>
+<Note> We do not use cookies or collect any personally identifiable information from your end-users. </Note>
+
+## Google API Services User Data Policy
+
+Prism's use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+
+Data obtained from Google Workspace APIs (Drive, Gmail, etc.) is **not** used to develop, improve, or train generalized or third-party AI models.
+
+## Google Workspace & Cloud Integrations
+
+Our application integrates with specific Google Workspace and Cloud services to provide enhanced analytics and knowledge retrieval capabilities. We request the minimum necessary permissions (scopes) to fulfill these features.
+
+### Scopes and Usage
+
+| Scope | Purpose |
+| :--- | :--- |
+| `../auth/bigquery.readonly` | Used strictly to fetch event data for anomaly detection and insight generation. |
+| `../auth/analytics.readonly` | Used to aggregate traffic signals and cross-reference them with revenue/support data. |
+| `../auth/drive.readonly` | Used to index internal documentation to answer user questions with organizational context. |
+
+We access this data only after you have explicitly granted permission through Google's OAuth 2.0 authentication process.
+
+### Revoking Access
+You can revoke Refix's access to your Google data at any time through your [Google Account Settings](https://myaccount.google.com/permissions) or directly within the Refix platform's Integrations settings.
+
+## AI & Third-Party Processing
+
+Refix employs Large Language Models (LLMs) to process data and generate natural language insights, summaries, and answers.
+
+*   **Providers**: We utilize trusted LLM providers such as OpenAI and Anthropic for generative capabilities.
+*   **Data Usage**: Data fetched from your connected integrations (e.g., text from Drive documents, statistics from BigQuery) is sent to these providers **solely for the purpose** of generating the requested insight or answer.
+*   **Privacy Constraints**: This data is **transient** (processed and then discarded) or stored only within your private "Prism Knowledge Graph" to enable context-aware retrieval. Your data is **never shared** with other customers and is **not used** to train our providers' generalized models.
+
+## Data Retention & Storage
+
+*   **Refix Knowledge Graph**: We cache metadata and specific generated insights in the "Refix Knowledge Graph" to provide the service (e.g., to allow you to search your previous queries or fast-access metrics).
+*   **No Mirroring**: We do **not** permanently mirror or replicate your entire BigQuery database or Google Drive file system. We only store the specific data points or document chunks necessary to answer your queries.
+*   **General Retention**: We retain user account data only for as long as necessary to provide our service. Users can request total deletion of their account and associated data at any time.
 
 ## Data Storage and Security
 
@@ -69,58 +103,6 @@ Under GDPR, you have the right to:
 
 To exercise these rights, please contact us at [hey@refix.ai](mailto:hey@refix.ai).
 
-## Data Retention
-
-We retain data only for as long as necessary to provide our service and comply with legal obligations. Users can request deletion of their data at any time.
-
-## Google User Data Policy Addendum
-
-### Google User Data Access
-Our application accesses the following Google user data through the Google Analytics API:
-
-- Google Analytics reports, metrics, and dimensions
-- Google Analytics account and property information
-- View (profile) data and report configurations
-
-We access this data only after you have explicitly granted permission through Google's OAuth 2.0 authentication process for the following scopes:
-- `analytics.readonly`
-
-### Use of Google User Data
-Refix uses Google Analytics data solely for the following purposes:
-
-- Providing insights and analytics about your application performance
-- Displaying your Google Analytics data within our platform for your analysis
-- Generating recommendations and growth opportunities based on your analytics data
-- Powering our AI agent that performs deep dives on your Google Analytics data
-
-We process this data temporarily in memory to generate insights. We do not store, cache, or copy any Google Analytics data to our databases. All analysis is performed through direct API calls with your provided OAuth tokens.
-
-### Sharing Google User Data
-Refix does not share, transfer, or disclose your Google user data with any third parties.
-
-We do not:
-- Sell Google user data to third parties
-- Use Google user data for advertising purposes
-- Transfer Google user data to data brokers
-- Combine Google user data with other datasets in ways that would reduce user privacy or control
-
-### Revoking Access
-You can revoke Refix's access to your Google Analytics data at any time by either:
-
-Method 1: Through Google Account Settings
-1. Visiting Google Account Settings
-2. Selecting Refix from the list of connected applications
-3. Clicking "Remove Access"
-
-Method 2: Through Refix Platform
-1. Logging into your Refix account
-2. Navigating to the "Integrations" tab
-3. Finding the Google Analytics integration
-4. Clicking "Disconnect" or "Remove Access"
-
-
-Upon revocation through either method, we will immediately cease accessing your Google Analytics data and delete any cached credentials.
-
 ## Changes to This Policy
 
 We may update this policy from time to time. We will notify users of any significant changes.
@@ -131,41 +113,4 @@ If you have any questions about this policy or our data practices, please contac
 
 Email: [hey@refix.ai](mailto:hey@refix.ai)
 
-_Last updated: 1st August 2024_
-
-## Chat with Google Analytics Privacy Policy
-
-### Data Collection and Usage
-
-The Chat with Google Analytics Slackbot is designed to respect user privacy and minimize data collection. The only data stored by the Slackbot is the user's email address. All queries are processed in real-time using an API, and no other data is stored or retained.
-
-### Real-time Query Processing
-
-Queries submitted to the Slackbot are answered in real-time through API calls. We do not store, cache, or log any query data beyond the immediate processing required to generate a response.
-
-### Data Security
-
-- The email addresses are stored securely and are only used for authentication and user identification purposes.
-- We employ industry-standard security measures to protect the stored email addresses.
-
-### User Rights
-
-Users have the right to request access to their stored email address and can request its deletion at any time by contacting us at [hey@refix.ai](mailto:hey@refix.ai).
-
-### Changes to This Policy
-
-We may update this policy from time to time. We will notify users of any significant changes.
-
-### Contact Us
-
-If you have any questions about this policy or our data practices, please contact us at:
-
-Email: [hey@refix.ai](mailto:hey@refix.ai)
-
-_Last updated: 1st August 2024_
-
-## AI Services
-
-### Use of Azure Open AI Service
-
-For our Chat with Google Analytics product, we utilize the Azure Open AI service. This service is secure and hosted within the European Union, ensuring compliance with GDPR and other relevant data protection regulations. The Azure Open AI service is used to power our AI needs, providing advanced analytics and insights while maintaining the highest standards of data security and privacy.
+_Last updated: 9th January 2026_
