@@ -74,6 +74,7 @@
       "group": "Data & Privacy",
       "pages": [
         "privacy/GDPR",
+        "privacy/data-deletion",
         "privacy/TOS"
       ]
     },
