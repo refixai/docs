@@ -26,69 +26,13 @@
     "name": "Get Started",
     "url": "https://app.refix.ai"
   },
-  "anchors": [
-    {
-      "name": "Guides",
-      "icon": "lightbulb",
-      "url": "guides"
-    }
-  ],
   "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "overview",
-        "installation"
-      ]
-    },
-    {
-      "group": "Tracking",
-      "pages": [
-        "tracking/autocapture",
-        "tracking/users",
-        "tracking/sessions",
-        "tracking/interactions"
-      ]
-    },
-    {
-      "group": "Visual Labelling mode",
-      "pages": [
-        "visual-labelling-mode/overview",
-        "visual-labelling-mode/rename-an-event",
-        "visual-labelling-mode/limit-to-position"
-      ]
-    },
-    {
-      "group": "Framer plugin",
-      "pages": [
-        "framer-plugin/plugin-overview",
-        "framer-plugin/installation",
-        "framer-plugin/getting-started",
-        "framer-plugin/event-tracking",
-        "framer-plugin/event-details",
-        "framer-plugin/dashboard-overview",
-        "framer-plugin/plugin-privacy"
-      ]
-    },
     {
       "group": "Data & Privacy",
       "pages": [
         "privacy/GDPR",
         "privacy/data-deletion",
         "privacy/TOS"
-      ]
-    },
-    {
-      "group": "Pricing",
-      "pages": [
-        "pricing/overage-ltd"
-      ]
-    },
-    {
-      "group": "Guides",
-      "pages": [
-        "guides/framer",
-        "guides/webflow"
       ]
     }
   ],
